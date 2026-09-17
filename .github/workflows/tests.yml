@@ -32,7 +32,7 @@ jobs:
       - name: Create the npm cache directory
         run: mkdir npm-cache && npm config set cache ./npm-cache --global
       - name: Cache node modules
-        uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 #latest v3 TODO upgrade
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 #latest v4
         with:
           path: ./npm-cache
           key: v1-${{ runner.os }}-node-${{ matrix.node-version }}-npm-${{ hashFiles('**/package.json') }}
@@ -56,7 +56,7 @@ jobs:
       - name: Create the npm cache directory
         run: mkdir npm-cache && npm config set cache ./npm-cache --global
       - name: Cache node modules
-        uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 #latest v3 TODO upgrade
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 #latest v4
         with:
           path: ./npm-cache
           key: v1-npm-${{ hashFiles('**/package.json') }}
@@ -80,7 +80,7 @@ jobs:
       - name: Create the npm cache directory
         run: mkdir npm-cache && npm config set cache ./npm-cache --global
       - name: Cache node modules
-        uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 #latest v3 TODO upgrade
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 #latest v4
         with:
           path: ./npm-cache
           key: v1-npm-${{ hashFiles('**/package.json') }}
