@@ -124,6 +124,11 @@ describe('Excel Validator (round-trip files open cleanly in Excel)', function ()
     await checkRoundTrip('spec/integration/data/test-issue-880.xlsx');
   });
 
+  it('issue 2585 - table ref corruption on load/write round-trip', async function () {
+    this.timeout(30000);
+    await checkRoundTrip('spec/integration/data/test-issue-2585.xlsx');
+  });
+
   it('pull request 1204 fixture', async function () {
     this.timeout(30000);
     await checkRoundTrip('spec/integration/data/test-pr-1204.xlsx');
