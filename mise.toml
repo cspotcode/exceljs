@@ -1,0 +1,5 @@
+[tools]
+node = "20"
+npm = "latest"
+pnpm = "latest"
+uv = "latest"

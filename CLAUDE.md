@@ -1,1 +1,2 @@
-- 2885
+See @AGENTS.md
+See @.claude/instructions.md
