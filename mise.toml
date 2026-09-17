@@ -1,5 +1,5 @@
 [tools]
-node = "20"
-npm = "latest"
+node = "22"
+npm = "10"
 pnpm = "latest"
 uv = "latest"
