@@ -1,0 +1,17 @@
+// For validating our bundled typedefs: index.d.ts
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+    "noEmit": true,
+
+    // Being explicit: never enable skipLibCheck!
+    // if you enable skipLibCheck, you will disable typechecking of our own .d.ts
+    "skipLibCheck": false,
+  },
+  "include": [
+    "index.d.ts",
+  ]
+}
