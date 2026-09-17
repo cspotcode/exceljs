@@ -74,3 +74,9 @@ docs/security_review_2025.md
 docs/security_disclosure_guidelines.md
 docs/pullrequest_analysis.md
 docs
+
+# excel-validator C# artifacts
+spec/utils/excel-validator/bin
+spec/utils/excel-validator/csharp/bin
+spec/utils/excel-validator/csharp/obj
+spec/utils/excel-validator/csharp/.vs

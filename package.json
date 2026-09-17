@@ -49,6 +49,8 @@
     "test:end-to-end:es5": "export EXCEL_BUILD=es5 && npm run test:end-to-end",
     "test:dist": "mocha --require spec/config/setup spec/dist --recursive",
     "test:manual": "node spec/manual/app.js",
+    "test:excel-validator": "mocha --require spec/config/setup spec/excel-validator --recursive",
+    "build:excel-validator": "dotnet publish spec/utils/excel-validator/csharp -o spec/utils/excel-validator/bin",
     "test:typescript": "mocha -r ts-node/register spec/typescript/**/*.spec.ts",
     "clean-build": "npm run clean && npm run build",
     "lint": "eslint --format node_modules/eslint-friendly-formatter .",
